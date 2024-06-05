@@ -6,14 +6,14 @@
 /*   By: muhahmad <muhahmad@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 17:40:53 by muhahmad          #+#    #+#             */
-/*   Updated: 2024/06/05 12:53:45 by muhahmad         ###   ########.fr       */
+/*   Updated: 2024/06/05 13:07:07 by muhahmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <ctype.h>
 
-int	ft_isalnum(char c)
+int	ft_isalnum(int c)
 {
 	if ((c < 48 || c > 57)
 		&& (c < 65 || c > 90)
@@ -24,7 +24,7 @@ int	ft_isalnum(char c)
 /*
 int main()
 {
-	char c = '&';
+	char c = '2';
 	printf("is it numeric or alpha?: %d\n", ft_isalnum(c));
 	printf("is it alpha or numeric: %d", isalnum(c));
 	
