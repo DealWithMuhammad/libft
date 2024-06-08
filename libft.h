@@ -6,9 +6,11 @@
 /*   By: muhahmad <muhahmad@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 13:45:10 by muhahmad          #+#    #+#             */
-/*   Updated: 2024/06/05 15:08:41 by muhahmad         ###   ########.fr       */
+/*   Updated: 2024/06/08 14:43:37 by muhahmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <unistd.h>
 
 int	ft_isalpha(int c);
 int	ft_isdigit(int c);
