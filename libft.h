@@ -6,7 +6,7 @@
 /*   By: muhahmad <muhahmad@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 13:45:10 by muhahmad          #+#    #+#             */
-/*   Updated: 2024/07/19 14:05:12 by muhahmad         ###   ########.fr       */
+/*   Updated: 2024/07/19 15:57:33 by muhahmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,9 @@ int					ft_isascii(int c);
 int					ft_isprint(int c);
 int					ft_toupper(int c);
 int					ft_tolower(int c);
+
 void                ft_bzero(void *s, size_t n);
+void                *ft_memcpy(void *dst, const void *src, size_t n);
 
 typedef struct		s_list
 {
