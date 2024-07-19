@@ -6,13 +6,13 @@
 /*   By: muhahmad <muhahmad@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/12 12:00:33 by muhahmad          #+#    #+#             */
-/*   Updated: 2024/07/12 13:54:42 by muhahmad         ###   ########.fr       */
+/*   Updated: 2024/07/19 12:52:29 by muhahmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_tolower(int c)
 {
-	if (c > 65 && c < 91)
+	if (c >= 'A' && c <= 'Z')
 		c += 32;
 	return (c);
 }
