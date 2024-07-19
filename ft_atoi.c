@@ -6,7 +6,7 @@
 /*   By: muhahmad <muhahmad@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/12 15:29:03 by muhahmad          #+#    #+#             */
-/*   Updated: 2024/07/12 16:29:50 by muhahmad         ###   ########.fr       */
+/*   Updated: 2024/07/19 13:10:56 by muhahmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,11 @@ int	ft_atoi(const char *str)
 	i = 0;
 	res = 0;
 	sign = 1;
-	while (str[i] == ' ')
+	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\f' ||
+			str[i] == '\r' || str[i] == '\v' || str[i] == '\n')
+	{
 		i++;
+	}
 	while (str[i] == '-' || str[i] == '+')
 	{
 		if (str[i] == '-')
@@ -29,7 +32,7 @@ int	ft_atoi(const char *str)
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		res = res * 10 + str[i] - '0';
+		res = res * 10 + (str[i] - '0');
 		i++;
 	}
 	return (res * sign);
@@ -38,7 +41,7 @@ int	ft_atoi(const char *str)
 #include <stdio.h>
 int main ()
 {
-	char test[] = "--123abhb";
+	char test[] = "--123";
 	int result = ft_atoi (test);
 	printf("%d", result);
 }
