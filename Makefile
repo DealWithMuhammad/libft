@@ -6,7 +6,7 @@
 #    By: muhahmad <muhahmad@student.42kl.edu.my>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/20 12:39:03 by muhahmad          #+#    #+#              #
-#    Updated: 2024/07/20 12:39:58 by muhahmad         ###   ########.fr        #
+#    Updated: 2024/07/20 12:58:42 by muhahmad         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,8 @@ FILES       = ft_memset.c \
               ft_tolower.c \
               ft_isascii.c \
 			  ft_bzero.c \
-			  ft_memcpy.c 
+			  ft_memcpy.c \
+              ft_memmove.c
 OBJ         = $(FILES:.c=.o)
 
 all: $(NAME)
