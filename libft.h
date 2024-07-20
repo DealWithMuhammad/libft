@@ -6,7 +6,7 @@
 /*   By: muhahmad <muhahmad@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 13:45:10 by muhahmad          #+#    #+#             */
-/*   Updated: 2024/07/20 12:58:26 by muhahmad         ###   ########.fr       */
+/*   Updated: 2024/07/20 15:51:29 by muhahmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@
 # include <unistd.h>
 # include <stdlib.h>
 
-# define IS_SPACE(x) (x == ' ' || x == '\t' || x == '\r' || x == '\f')
 
 
 int					ft_atoi(const char *str);
@@ -31,11 +30,16 @@ int					ft_atoi(const char *str);
 void				*ft_memset(void *b, int c, size_t len);
 
 
-size_t				ft_strlen(const char *str);
+size_t				ft_strlen(const char *s);
+
+
 char				*ft_strcpy(char *dst, const char *src);
 char				*ft_strchr(const char *s, int c);
 char                 *ft_strrchr(const char *s, int c);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
+
+size_t				ft_strlcpy(char *dst, const char *src, size_t dstsize);
+
 
 int					ft_isalpha(int c);
 int					ft_isdigit(int c);
