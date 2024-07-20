@@ -4,7 +4,7 @@ PARENT_DIR		= $(shell dirname $(shell pwd))
 LIBFT_PATH		= $(PARENT_DIR)
 TESTS_PATH		= tests/
 MANDATORY		= atoi strlen isalpha isdigit isalnum memset bzero \
-				isascii isprint toupper tolower strchr strncmp  strrchr memcpy
+				isascii isprint toupper tolower strchr strncmp strrchr memcpy
 BONUS			= lstnew lstadd_front lstsize lstlast lstadd_back lstdelone lstclear lstiter lstmap
 VSOPEN			= $(addprefix vs, $(MANDATORY)) $(addprefix vs, $(BONUS))
 

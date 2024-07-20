@@ -14,7 +14,7 @@ FILES       = ft_memset.c \
               ft_tolower.c \
               ft_isascii.c \
 			  ft_bzero.c \
-			  ft_memcpy \
+			  ft_memcpy.c 
 OBJ         = $(FILES:.c=.o)
 
 all: $(NAME)
