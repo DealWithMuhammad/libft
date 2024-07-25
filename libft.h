@@ -6,7 +6,7 @@
 /*   By: muhahmad <muhahmad@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 13:45:10 by muhahmad          #+#    #+#             */
-/*   Updated: 2024/07/20 15:51:29 by muhahmad         ###   ########.fr       */
+/*   Updated: 2024/07/25 13:18:48 by muhahmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ char                 *ft_strrchr(const char *s, int c);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
 
 size_t				ft_strlcpy(char *dst, const char *src, size_t dstsize);
-
+size_t				ft_strlcat(char *s1, const char *s2, size_t dstsize);
 
 int					ft_isalpha(int c);
 int					ft_isdigit(int c);

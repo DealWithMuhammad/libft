@@ -6,7 +6,7 @@
 #    By: muhahmad <muhahmad@student.42kl.edu.my>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/20 12:39:03 by muhahmad          #+#    #+#              #
-#    Updated: 2024/07/20 15:46:00 by muhahmad         ###   ########.fr        #
+#    Updated: 2024/07/25 13:29:37 by muhahmad         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,8 @@ FILES       = ft_memset.c \
 			  ft_bzero.c \
 			  ft_memcpy.c \
               ft_memmove.c \
-              ft_strlcpy.c
+              ft_strlcpy.c \
+              ft_strlcat.c
 OBJ         = $(FILES:.c=.o)
 
 all: $(NAME)
