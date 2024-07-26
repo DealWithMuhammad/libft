@@ -6,7 +6,7 @@
 /*   By: muhahmad <muhahmad@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 13:45:10 by muhahmad          #+#    #+#             */
-/*   Updated: 2024/07/26 13:20:48 by muhahmad         ###   ########.fr       */
+/*   Updated: 2024/07/26 14:35:49 by muhahmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,7 @@ int					ft_tolower(int c);
 void                ft_bzero(void *s, size_t n);
 void                *ft_memcpy(void *dst, const void *src, size_t n);
 void				*ft_memmove(void *dst, const void *src, size_t len);
+char				*ft_strnstr(const char *haystack, const char *needle, size_t len);
 
 typedef struct		s_list
 {
