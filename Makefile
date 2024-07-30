@@ -35,7 +35,8 @@ FILES       = ft_memset.c \
               ft_strnstr.c  \
               ft_calloc.c   \
               ft_strdup.c \
-              ft_putchar_fd.c
+              ft_putchar_fd.c \
+              ft_putendl_fd.c
 OBJ         = $(FILES:.c=.o)
 
 all: $(NAME)
