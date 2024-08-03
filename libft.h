@@ -6,7 +6,7 @@
 /*   By: muhahmad <muhahmad@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 13:45:10 by muhahmad          #+#    #+#             */
-/*   Updated: 2024/08/03 14:12:12 by muhahmad         ###   ########.fr       */
+/*   Updated: 2024/08/03 14:48:53 by muhahmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,7 @@ void *ft_memmove(void *dst, const void *src, size_t len);
 char *ft_strnstr(const char *haystack, const char *needle, size_t len);
 char *ft_substr(char const *s, unsigned int start, size_t len);
 char *ft_strjoin(char const *s1, char const *s2);
+char *ft_strtrim(char const *s1, char const *set);
 
 
 
