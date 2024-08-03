@@ -6,7 +6,7 @@
 /*   By: muhahmad <muhahmad@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/03 14:11:48 by muhahmad          #+#    #+#             */
-/*   Updated: 2024/08/03 14:44:20 by muhahmad         ###   ########.fr       */
+/*   Updated: 2024/08/03 14:47:11 by muhahmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	j = 0;
 	str = (char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
 	if (str == NULL)
-		return NULL;
+		return (NULL);
 	while (s1[i] != '\0')
 	{
 		str[i] = s1[i];
@@ -34,5 +34,5 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		j++;
 	}
 	str[i + j] = '\0';
-	return str;
+	return (str);
 }
