@@ -6,7 +6,7 @@
 #    By: muhahmad <muhahmad@student.42kl.edu.my>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/20 12:39:03 by muhahmad          #+#    #+#              #
-#    Updated: 2024/07/29 17:42:06 by muhahmad         ###   ########.fr        #
+#    Updated: 2024/08/03 14:12:20 by muhahmad         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,11 @@ FILES       = ft_memset.c \
               ft_calloc.c   \
               ft_strdup.c \
               ft_putchar_fd.c \
-              ft_putendl_fd.c
+              ft_putendl_fd.c  \
+              ft_putstr_fd.c    \
+              ft_putnbr_fd.c    \
+              ft_substr.c   \
+              ft_strjoin.c
 OBJ         = $(FILES:.c=.o)
 
 all: $(NAME)

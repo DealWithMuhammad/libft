@@ -6,7 +6,7 @@
 /*   By: muhahmad <muhahmad@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 13:45:10 by muhahmad          #+#    #+#             */
-/*   Updated: 2024/07/29 17:42:58 by muhahmad         ###   ########.fr       */
+/*   Updated: 2024/08/03 14:12:12 by muhahmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 #include <stdio.h>
 
 int ft_atoi(const char *str);
-void ft_putchar_fd(char c, int fd);
+
 
 void *ft_memset(void *b, int c, size_t len);
 
@@ -53,6 +53,16 @@ void ft_bzero(void *s, size_t n);
 void *ft_memcpy(void *dst, const void *src, size_t n);
 void *ft_memmove(void *dst, const void *src, size_t len);
 char *ft_strnstr(const char *haystack, const char *needle, size_t len);
-void ft_putendl_fd(char *s, int fd)
+char *ft_substr(char const *s, unsigned int start, size_t len);
+char *ft_strjoin(char const *s1, char const *s2);
+
+
+
+void ft_putendl_fd(char *s, int fd);
+void ft_putstr_fd(char *s, int fd);
+void ft_putchar_fd(char c, int fd);
+void ft_putnbr_fd(int n, int fd);
+
+
 
 #endif

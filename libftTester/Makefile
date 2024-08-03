@@ -3,7 +3,7 @@ UTILS			= $(addprefix utils/, sigsegv.cpp color.cpp check.cpp leaks.cpp)
 PARENT_DIR		= $(shell dirname $(shell pwd))
 LIBFT_PATH		= $(PARENT_DIR)
 TESTS_PATH		= tests/
-MANDATORY		= putendl_fd putchar_fd strdup calloc strnstr strlcpy atoi strlen isalpha isdigit isalnum memset bzero memchr memcmp\
+MANDATORY		= strjoin substr putnbr_fd putstr_fd putendl_fd putchar_fd strdup calloc strnstr strlcpy atoi strlen isalpha isdigit isalnum memset bzero memchr memcmp\
 				isascii isprint toupper tolower strchr strncmp strrchr memcpy memmove strlcat
 BONUS			= lstnew lstadd_front lstsize lstlast lstadd_back lstdelone lstclear lstiter lstmap
 VSOPEN			= $(addprefix vs, $(MANDATORY)) $(addprefix vs, $(BONUS))
