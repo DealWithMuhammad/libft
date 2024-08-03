@@ -6,33 +6,30 @@
 /*   By: muhahmad <muhahmad@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/29 16:51:17 by muhahmad          #+#    #+#             */
-/*   Updated: 2024/07/29 17:15:50 by muhahmad         ###   ########.fr       */
+/*   Updated: 2024/08/03 12:34:00 by muhahmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strdup(const char *s1)
+char	*ft_strdup(const char *s1)
 {
-    size_t length;
+	size_t	length;
+	char	*dup;
 
-    length = ft_strlen(s1) + 1;
-
-    char *dup;
-    dup = (char *)malloc(length);
-
-    ft_memcpy(dup, s1, length);
-
-    return dup;
+	length = ft_strlen(s1) + 1;
+	dup = (char *)malloc(length);
+	ft_memcpy(dup, s1, length);
+	return (dup);
 }
 /*
 int main ()
 {
-    char *s1 = "This is my string 1";
-    char *dup;
+	char *s1 = "This is my string 1";
+	char *dup;
 
-    dup = ft_strdup(s1);
+	dup = ft_strdup(s1);
 
-    printf("%s", dup); 
+	printf("%s", dup); 
 }
 */
