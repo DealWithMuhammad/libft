@@ -6,7 +6,7 @@
 /*   By: muhahmad <muhahmad@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/13 12:35:55 by muhahmad          #+#    #+#             */
-/*   Updated: 2024/07/13 13:06:31 by muhahmad         ###   ########.fr       */
+/*   Updated: 2024/08/16 14:06:31 by muhahmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,11 @@ char	*ft_strchr(const char *s, int c)
 {
 	while (*s)
 	{
-		if (*s == (char) c)
+		if (*s == (char)c)
 			return ((char *)s);
 		s++;
 	}
-	if (c == '\0')
+	if (*s == (char)c)
 		return ((char *)s);
 	return (NULL);
 }

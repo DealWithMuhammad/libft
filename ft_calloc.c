@@ -6,7 +6,7 @@
 /*   By: muhahmad <muhahmad@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/29 16:24:27 by muhahmad          #+#    #+#             */
-/*   Updated: 2024/08/03 12:42:47 by muhahmad         ###   ########.fr       */
+/*   Updated: 2024/08/16 14:27:36 by muhahmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	*ft_calloc(size_t num, size_t size)
 	if (num == 0 || size == 0)
 		return (malloc(0));
 	if (num > SIZE_MAX / size)
-		return (NULL);
+		return (NULL);x
 	total_size = num * size;
 	ptr = malloc(total_size);
 	if (ptr == NULL)

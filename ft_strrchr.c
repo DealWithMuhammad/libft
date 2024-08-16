@@ -6,7 +6,7 @@
 /*   By: muhahmad <muhahmad@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/13 13:15:30 by muhahmad          #+#    #+#             */
-/*   Updated: 2024/07/13 13:53:36 by muhahmad         ###   ########.fr       */
+/*   Updated: 2024/08/16 14:08:32 by muhahmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@ char	*ft_strrchr(const char *s, int c)
 	while (*s)
 	{
 		if (*s == (char)c)
-			last_occerance = (char *) s;
+			last_occerance = s;
 		s++;
 	}
-	if (c == '\0')
-		return ((char *) s);
+	if (*s == (char)c)
+		return ((char *)s);
 	return ((char *)last_occerance);
 }
 /*

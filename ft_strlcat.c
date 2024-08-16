@@ -6,7 +6,7 @@
 /*   By: muhahmad <muhahmad@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/21 06:27:59 by muhahmad          #+#    #+#             */
-/*   Updated: 2024/07/25 15:30:52 by muhahmad         ###   ########.fr       */
+/*   Updated: 2024/08/16 14:14:37 by muhahmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,27 +14,24 @@
 
 size_t	ft_strlcat(char *s1, const char *s2, size_t dstsize)
 {
+	size_t	srclen;
+	size_t	dstlen;
 	size_t	i;
-	size_t	j;
-	size_t	len;
 
+	srclen = ft_strlen(s2);
+	dstlen = 0;
+	while (dstlen < dstsize && s1[dstlen] != '\0')
+		dstlen++;
+	if (dstsize <= dstlen)
+		return (dstsize + srclen);
 	i = 0;
-	j = 0;
-	while (s1[i] != '\0' && i <= dstsize)
-		i++;
-	while (s2[j] != '\0')
-		j++;
-	if (dstsize == 0 || dstsize <= i)
-		return (dstsize + j);
-	len = i;
-	while (i < dstsize - 1 && s2[i - len] != '\0' )
+	while (dstlen + i + 1 < dstsize && s2[i] != '\0')
 	{
-		s1[i] = s2[i - len];
+		s1[dstlen + i] = s2[i];
 		i++;
 	}
-	if (i < dstsize)
-		s1[i] = '\0';
-	return (len + j);
+	s1[dstlen + i] = '\0';
+	return (dstlen + srclen);
 }
 /*
 #include <stdio.h> 

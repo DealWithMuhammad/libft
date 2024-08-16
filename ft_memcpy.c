@@ -6,7 +6,7 @@
 /*   By: muhahmad <muhahmad@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/19 15:40:59 by muhahmad          #+#    #+#             */
-/*   Updated: 2024/07/20 12:38:50 by muhahmad         ###   ########.fr       */
+/*   Updated: 2024/08/16 10:18:16 by muhahmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	char		*d;
 	const char	*s;
 
+	if (!dst && !src && n > 0)
+		return (NULL);
 	i = 0;
 	d = (char *) dst;
 	s = (const char *)src;

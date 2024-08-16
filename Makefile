@@ -6,7 +6,7 @@
 #    By: muhahmad <muhahmad@student.42kl.edu.my>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/20 12:39:03 by muhahmad          #+#    #+#              #
-#    Updated: 2024/08/10 13:25:05 by muhahmad         ###   ########.fr        #
+#    Updated: 2024/08/16 10:31:33 by muhahmad         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,7 +44,8 @@ FILES       = ft_memset.c \
               ft_strtrim.c \
               ft_split.c    \
               ft_itoa.c \
-              ft_strmapi.c
+              ft_strmapi.c \
+              ft_striteri.c
 OBJ         = $(FILES:.c=.o)
 
 all: $(NAME)
@@ -57,7 +58,7 @@ $(OBJ): %.o: %.c
 	gcc $(CFLAGS) $< -o $@
 
 clean:
-	rm -f $(OBJ)
+	rm -f $(OBJ) $(NAME)
 	# rm -f $(FILES) 
 
 fclean: clean
